@@ -1,0 +1,100 @@
+{
+  "model": "Random Forest",
+  "threshold": 0.41,
+  "precision_floor": 0.75,
+  "features": [
+    "days_for_shipment_scheduled",
+    "shipping_mode",
+    "market",
+    "order_region",
+    "department_name",
+    "customer_segment",
+    "order_item_quantity",
+    "order_item_product_price",
+    "order_item_discount_rate",
+    "order_month",
+    "order_dayofweek"
+  ],
+  "categories": {
+    "shipping_mode": [
+      "First Class",
+      "Same Day",
+      "Second Class",
+      "Standard Class"
+    ],
+    "market": [
+      "Africa",
+      "Europe",
+      "LATAM",
+      "Pacific Asia",
+      "USCA"
+    ],
+    "order_region": [
+      "Canada",
+      "Caribbean",
+      "Central Africa",
+      "Central America",
+      "Central Asia",
+      "East Africa",
+      "East of USA",
+      "Eastern Asia",
+      "Eastern Europe",
+      "North Africa",
+      "Northern Europe",
+      "Oceania",
+      "South America",
+      "South Asia",
+      "South of  USA ",
+      "Southeast Asia",
+      "Southern Africa",
+      "Southern Europe",
+      "US Center ",
+      "West Africa",
+      "West Asia",
+      "West of USA ",
+      "Western Europe"
+    ],
+    "department_name": [
+      "Apparel",
+      "Book Shop",
+      "Discs Shop",
+      "Fan Shop",
+      "Fitness",
+      "Footwear",
+      "Golf",
+      "Health and Beauty ",
+      "Outdoors",
+      "Pet Shop",
+      "Technology"
+    ],
+    "customer_segment": [
+      "Consumer",
+      "Corporate",
+      "Home Office"
+    ]
+  },
+  "default_scheduled_days": {
+    "First Class": 1,
+    "Same Day": 0,
+    "Second Class": 2,
+    "Standard Class": 4
+  },
+  "late_rate_by_mode": {
+    "First Class": 0.953,
+    "Second Class": 0.766,
+    "Same Day": 0.457,
+    "Standard Class": 0.381
+  },
+  "ranges": {
+    "quantity_max": 5,
+    "price_max": 1999.98999,
+    "discount_max": 0.25
+  },
+  "test_metrics": {
+    "Precision": 0.7886314783854789,
+    "Recall": 0.5966750993856161,
+    "Accuracy": 0.6917828537525956,
+    "AUC": 0.7311613261244412
+  },
+  "sklearn_version": "1.6.1"
+}
